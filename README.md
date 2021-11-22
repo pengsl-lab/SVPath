@@ -33,7 +33,7 @@ cd saved_models
 python training.py -i ./del_features.csv -o . -t DEL
 ```
 ### Pre-treatment
-The input of SVPath is a standard VCF file, and this file contains only one structural variation, namely deletion, insertion or duplication. For example ```example/deletion.vcf```. We need to annotate it with the ANNOVAR variant annotation tool. (ANNOVAR was developed by Wang et al., see https://annovar.openbioinformatics.org/en/latest/ or https://github.com/WGLab/doc-ANNOVAR)
+The input of SVPath is a standard VCF file, and this file contains only one structural variation, namely deletion, insertion or duplication. For example ```example/deletion.vcf```. We need to annotate it with the ANNOVAR variant annotation tool. (ANNOVAR was developed by Wang et al., see https://annovar.openbioinformatics.org/en/latest/ or https://github.com/WGLab/doc-ANNOVAR) (Wang K, Li M, Hakonarson H. ANNOVAR: Functional annotation of genetic variants from next-generation sequencing data Nucleic Acids Research, 38:e164, 2010)
 ```
 ./annovar/table_annovar.pl example/deletion.vcf annovar/humandb/ -buildver hg19 -out DEL -remove -protocol refGene -operation g -nastring . -vcfinput
 ```
