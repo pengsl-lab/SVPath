@@ -9,7 +9,7 @@ sh download.sh
 ```
 Here, for the download of CADD, revel, dbNSFP and MCAP, we use the download method of ANNOVAR and get the files in txt format. Due to the large size of these files, they are all read line by line during operation, so it will take a lot of time. Therefore, we split these large files to speed up the running speed. The file splitting is through:
 ```
-sh split.sh
+sh split.sh path/to/reference.fa
 ```
 ## Requirements
 SVPath runs on a Linux system and requires the following software packages:
