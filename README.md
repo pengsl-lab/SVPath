@@ -11,6 +11,7 @@ Here, for the download of CADD, revel, dbNSFP and MCAP, we use the download meth
 ```
 sh split.sh path/to/reference.fa
 ```
+The hg19 reference can be downloaded from https://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/
 ## Requirements
 SVPath runs on a Linux system and requires the following software packages:
 * python 3.6
