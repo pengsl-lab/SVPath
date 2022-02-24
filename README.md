@@ -2,6 +2,10 @@
 SVPath is used to predict the pathogenicity of human exon structural variations. SVPath is based on the Gradient Boosting Decision Tree (GBDT) machine learning method. The training data comes from ClinVar (https://www.ncbi.nlm.nih.gov/clinvar/) and dbVar (https://www.ncbi.nlm.nih.gov/dbvar/) (based on the hg19 reference genome). By integrating various feature data, SVPath realizes the pathogenicity prediction of deletion, insertion and duplication structural variations on exon.
 ![SVPath logo](./logo.png)
 
+## Publication
+Yang, Y., Wang, X., Zhou, D., Wei, D. Q., & Peng, S. (2022). SVPath: an accurate pipeline for predicting the pathogenicity of human exon structural variants. Briefings in Bioinformatics.
+
+
 ## Data preparation
 Because SVPath requires more external data, some smaller files are already included in the corresponding directories. We provide a way to download larger files in the ```download.sh``` file, just run the following command to download:
 ```
